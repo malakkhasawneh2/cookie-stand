@@ -12,6 +12,25 @@
       <h1>Salmon Cookies Sales</h1>
       <p>In this table you will find the total daily sales in all our branches</p>
     </header>
+
+    <form id = "add-store-form">
+      <fieldset>
+        <legend>Add new store</legend>
+        <label for = "storeName">Store Name:</label>
+        <input name = "storeName" type = "text" />
+  
+        <label for = "minCust">Minimum Hourly Customers:</label>
+        <input name = "minCust" type = "text" />
+  
+        <label for = "maxCust">Maximum Hourly Customers:</label>
+        <input name = "maxCust" type = "text" />
+  
+        <label for = "avgSales">Average Cookie Sales per Customer:</label>
+        <input name = "avgSales" type = "text" />
+  
+        <button type = "submit">Submit</button>
+      </fieldset>
+    </form>
     <div id="salesTable"></div>
     <a href="index.html">Home Page</a>
 
