@@ -102,23 +102,23 @@ let hourlyTotal = function() {
     trEl.appendChild(tdEl);
   }
   salesTable.appendChild(trEl);
-  function makefooter () {
-    //mega total
-    let footerrow = document.createElement('tr')
-    salesTable.appendChild(footerrow)
-    let megaTotal = 0;
-    for (let i = 0; i < hours.length; i++) {
-      let sum = 0;
-      for (var j = 0; j < objectStoreNames.length; j++) {
-        sum += objectStoreNames[j].cookieSalesEachHour[i];
-        megaTotal += sum;
-      }    
-    }
-    let finaltd = document.createElement('td');
-    footerrow.appendChild(finaltd);
-    finaltd.textContent=megaTotal;
-  }
-  makefooter();
+  // function makefooter () {
+  //   //mega total
+  //   let footerrow = document.createElement('tr')
+  //   salesTable.appendChild(footerrow)
+  //   let megaTotal = 0;
+  //   for (let i = 0; i < hours.length; i++) {
+  //     let sum = 0;
+  //     for (var j = 0; j < objectStoreNames.length; j++) {
+  //       sum += objectStoreNames[j].cookieSalesEachHour[i];
+  //       megaTotal += sum;
+  //     }    
+  //   }
+  //   let finaltd = document.createElement('td');
+  //   footerrow.appendChild(finaltd);
+  //   finaltd.textContent=megaTotal;
+  // }
+  // makefooter();
 };
 // Handler Function 
 
